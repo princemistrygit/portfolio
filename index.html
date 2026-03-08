@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Prince Mistry — WordPress Developer based in Vadodara, Gujarat, India."/>
+  <title>Prince Mistry — WordPress Developer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- ── CUSTOM CURSOR ── -->
+<div class="cursor"      id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ── BACKGROUND ── -->
+<div class="bg-layer">
+  <div class="bg-orb bg-orb-1"></div>
+  <div class="bg-orb bg-orb-2"></div>
+  <div class="bg-orb bg-orb-3"></div>
+</div>
+<div class="bg-grid"></div>
+
+<!-- ── BACK TO TOP ── -->
+<button class="back-top" id="backTop" aria-label="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- ════════════════════════════════════════
+     NAV
+════════════════════════════════════════ -->
+<nav id="nav" role="navigation">
+  <div class="nav-logo">
+    <div class="nav-logo-dot"></div>
+    Prince<span>.</span>dev
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#github">GitHub</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <button class="nav-hire" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+    Hire Me
+  </button>
+
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mob-nav" id="mobNav" role="dialog" aria-label="Navigation menu">
+  <button class="mob-close" id="mobClose" aria-label="Close menu">✕</button>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#github">GitHub</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- ════════════════════════════════════════
+     HERO
+════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-grid">
+
+    <!-- Left: Text -->
+    <div class="hero-left">
+      <div class="hero-badge">
+        <div class="hero-badge-dot"></div>
+        Available for Work
+      </div>
+
+      <h1 class="hero-name">
+        <span class="sky">Prince</span><br>Mistry
+      </h1>
+
+      <p class="hero-role">
+        <span class="hero-role-bar"></span>
+        <span id="typingText">WordPress Developer</span><span style="color:var(--sky);animation:badgePulse 1s infinite">|</span>
+      </p>
+
+      <p class="hero-intro">
+        Motivated WordPress Developer with knowledge of HTML, CSS, PHP, and WordPress customization.
+        Experienced in converting HTML templates into WordPress websites and building layouts using Elementor.
+      </p>
+
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-layer-group"></i> View Projects
+        </a>
+        <a href="./Prince_Mistry_Resume.pdf" class="btn btn-sky-ghost">
+          <!-- onclick="alert('Resume download coming soon!'); return false;" -->
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fas fa-paper-plane"></i> Contact Me
+        </a>
+        <a href="https://www.linkedin.com/in/prince-mistry-p27/" class="btn btn-outline">
+          <i class="fas fa-paper-plane"></i> Linkdin
+        </a>
+      </div>
+
+      <div class="hero-stats-strip">
+        <div class="hs-stat">
+          <div class="n count-up" data-target="2" data-suffix="+">0+</div>
+          <div class="l">Projects</div>
+        </div>
+        <div class="hs-stat">
+          <div class="n">4<span style="font-size:1.1rem;color:var(--muted)">mo</span></div>
+          <div class="l">Internship</div>
+        </div>
+        <div class="hs-stat">
+          <div class="n count-up" data-target="12" data-suffix="+">0+</div>
+          <div class="l">Skills</div>
+        </div>
+      </div>
+
+      <div class="hero-scroll" style="margin-top:2rem">
+        <div class="hero-scroll-line"></div>
+        scroll down
+        <div class="hero-scroll-arrow"><i class="fas fa-arrow-down"></i></div>
+      </div>
+    </div>
+
+    <!-- Right: Photo -->
+    <div class="hero-photo-wrap">
+      <div class="photo-container">
+        <div class="photo-glow"></div>
+        <div class="photo-glow-bg"></div>
+        <div class="photo-frame">
+          <img class="profile-img" src="" alt="Prince Mistry — WordPress Developer"/>
+        </div>
+        <!-- Corner brackets -->
+        <div class="photo-bracket pb-tl"></div>
+        <div class="photo-bracket pb-tr"></div>
+        <div class="photo-bracket pb-bl"></div>
+        <div class="photo-bracket pb-br"></div>
+        <!-- Floating cards -->
+        <div class="photo-float pf-1">
+          <div class="pf-icon"><i class="fab fa-wordpress"></i></div>
+          <div class="pf-text">
+            <div class="t">WordPress Dev</div>
+            <div class="b">Elementor Expert</div>
+          </div>
+        </div>
+        <div class="photo-float pf-2">
+          <div class="pf-icon"><i class="fas fa-briefcase"></i></div>
+          <div class="pf-text">
+            <div class="t">Frontend Intern</div>
+            <div class="b">Taniya Webfix</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     ABOUT
+════════════════════════════════════════ -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+
+      <!-- Photo column -->
+      <div class="about-photo-col sr">
+        <div class="about-photo-main">
+          <img class="profileimg" src="./about1.png" alt="Prince Mistry"/>
+        </div>
+        <div class="about-float-chips">
+          <div class="afc"><i class="fas fa-map-marker-alt"></i> Vadodara, India</div>
+          <div class="afc"><i class="fas fa-circle" style="font-size:0.5rem;color:#4ade80"></i> Open to Work</div>
+        </div>
+      </div>
+
+      <!-- Text column -->
+      <div class="sr d2">
+        <div class="sec-overline"><span>About Me</span></div>
+        <h2 class="sec-title">Who I <em>Am</em></h2>
+        <div class="sec-rule"></div>
+
+        <div class="about-tags">
+          <span class="a-tag"><i class="fab fa-wordpress"></i> WordPress</span>
+          <span class="a-tag"><i class="fab fa-php"></i> PHP</span>
+          <span class="a-tag"><i class="fab fa-html5"></i> HTML5</span>
+          <span class="a-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+          <span class="a-tag"><i class="fas fa-paint-brush"></i> Elementor</span>
+          <span class="a-tag"><i class="fas fa-mobile-alt"></i> Responsive</span>
+          <span class="a-tag"><i class="fab fa-github"></i> GitHub</span>
+        </div>
+
+        <div class="about-body">
+          <p>
+            I'm a WordPress Developer based in Gujarat, India, passionate about crafting clean,
+            fast, and responsive websites. I specialize in WordPress customization, Elementor page
+            builder, and converting HTML templates into fully functional WordPress sites.
+          </p>
+          <p>
+            I enjoy the full cycle — from design to deployment. Currently deepening my knowledge
+            in advanced WordPress theme development and building real-world projects to strengthen
+            my portfolio.
+          </p>
+        </div>
+
+        <div class="info-grid">
+          <div class="ig-cell">
+            <div class="lb">Location</div>
+            <div class="vl">Vadodara, Gujarat</div>
+          </div>
+          <div class="ig-cell">
+            <div class="lb">Status</div>
+            <div class="vl" style="color:var(--sky)">Available ✓</div>
+          </div>
+          <div class="ig-cell">
+            <div class="lb">Experience</div>
+            <div class="vl">4 Months</div>
+          </div>
+          <div class="ig-cell">
+            <div class="lb">Type</div>
+            <div class="vl">Full-Time / Freelance</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     SKILLS
+════════════════════════════════════════ -->
+<section id="skills">
+  <div class="wrap">
+    <div class="sr sec-center">
+      <div class="sec-overline"><span>Skills</span></div>
+      <h2 class="sec-title">What I <em>Know</em></h2>
+      <div class="sec-rule"></div>
+    </div>
+
+    <div class="skills-layout">
+      <!-- Sidebar tabs -->
+      <div class="skills-nav sr d1">
+        <div class="snav active" data-tab="frontend">
+          <span><i class="fas fa-code" style="margin-right:.5rem;color:var(--sky)"></i>Frontend</span>
+          <span class="snav-arrow">→</span>
+        </div>
+        <div class="snav" data-tab="backend">
+          <span><i class="fas fa-server" style="margin-right:.5rem;color:var(--sky)"></i>Backend</span>
+          <span class="snav-arrow">→</span>
+        </div>
+        <div class="snav" data-tab="wordpress">
+          <span><i class="fab fa-wordpress" style="margin-right:.5rem;color:var(--sky)"></i>WordPress</span>
+          <span class="snav-arrow">→</span>
+        </div>
+        <div class="snav" data-tab="tools">
+          <span><i class="fas fa-tools" style="margin-right:.5rem;color:var(--sky)"></i>Tools</span>
+          <span class="snav-arrow">→</span>
+        </div>
+      </div>
+
+      <!-- Panels -->
+      <div class="sr d2">
+
+        <!-- Frontend -->
+        <div class="spanel active" id="sp-frontend">
+          <div class="skill-item">
+            <div class="skill-head">
+              <span class="skill-name">HTML5</span>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-w="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-head">
+              <span class="skill-name">CSS3</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-w="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-head">
+              <span class="skill-name">Responsive Design</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-w="80"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-head">
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-pct">60%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-w="60"></div></div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="spanel" id="sp-backend">
+          <div class="skill-item">
+            <div class="skill-head">
+              <span class="skill-name">PHP</span>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-w="70"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-head">
+              <span class="skill-name">MySQL</span>
+              <span class="skill-pct">65%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-w="65"></div></div>
+          </div>
+        </div>
+
+        <!-- WordPress -->
+        <div class="spanel" id="sp-wordpress">
+          <div class="skill-item">
+            <div class="skill-head">
+              <span class="skill-name">WordPress Development</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-w="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-head">
+              <span class="skill-name">Elementor Page Builder</span>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-w="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-head">
+              <span class="skill-name">Theme Customization</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-w="80"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-head">
+              <span class="skill-name">Custom Fields (ACF / SCF)</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-w="75"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-head">
+              <span class="skill-name">Contact Form 7 / WPForms</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-w="80"></div></div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="spanel" id="sp-tools">
+          <div class="skill-item">
+            <div class="skill-head">
+              <span class="skill-name">WAMP</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-w="80"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-head">
+              <span class="skill-name">GitHub</span>
+              <span class="skill-pct">60%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-w="60"></div></div>
+          </div>
+        </div>
+
+      </div><!-- end panels -->
+    </div><!-- end skills-layout -->
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     PROJECTS
+════════════════════════════════════════ -->
+<section id="projects">
+  <div class="wrap">
+    <div class="sr sec-center">
+      <div class="sec-overline"><span>Projects</span></div>
+      <h2 class="sec-title">Featured <em>Work</em></h2>
+      <div class="sec-rule"></div>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="proj-card sr">
+        <div class="proj-thumb pt-charity">
+          <div class="pt-grid-lines"></div>
+          <div class="pt-emoji">🤝</div>
+          <div class="proj-ribbon">WP Conversion</div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-cat">HTML Template → WordPress</div>
+          <h3 class="proj-title">Charity Website</h3>
+          <p class="proj-desc">
+            Converted the Chariteam HTML template into a fully functional WordPress website with
+            custom header, footer, SCF custom fields, and WPForms integration. Fully responsive
+            and production-ready.
+          </p>
+          <div class="proj-tags">
+            <span class="ptag">WordPress</span>
+            <span class="ptag">PHP</span>
+            <span class="ptag">SCF</span>
+            <span class="ptag">WPForms</span>
+            <span class="ptag">HTML/CSS</span>
+          </div>
+          <div class="proj-links">
+            <a href="#" class="pl pl-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="https://github.com/princemistry1227" target="_blank" class="pl pl-code">
+              <i class="fab fa-github"></i> GitHub Code
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="proj-card sr d2">
+        <div class="proj-thumb pt-restaurant">
+          <div class="pt-grid-lines"></div>
+          <div class="pt-emoji">🍽️</div>
+          <div class="proj-ribbon">WordPress + Elementor</div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-cat">Design & Build</div>
+          <h3 class="proj-title">Restaurant Website</h3>
+          <p class="proj-desc">
+            Modern restaurant website with hero section, interactive menu layout, gallery, and
+            contact form. Built using Elementor with clean responsive design for all devices.
+          </p>
+          <div class="proj-tags">
+            <span class="ptag">WordPress</span>
+            <span class="ptag">Elementor</span>
+            <span class="ptag">CSS3</span>
+            <span class="ptag">Responsive</span>
+          </div>
+          <div class="proj-links">
+            <a href="#" class="pl pl-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="https://github.com/princemistry1227" target="_blank" class="pl pl-code">
+              <i class="fab fa-github"></i> GitHub Code
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     EXPERIENCE
+════════════════════════════════════════ -->
+<section id="experience">
+  <div class="wrap">
+    <div class="sr">
+      <div class="sec-overline"><span>Experience</span></div>
+      <h2 class="sec-title">Work <em>History</em></h2>
+      <div class="sec-rule"></div>
+    </div>
+
+    <div class="exp-card sr">
+      <div class="exp-stripe"></div>
+      <div class="exp-body">
+        <div class="exp-period">
+          <i class="far fa-calendar-alt"></i> Jan 2025 — Apr 2025
+        </div>
+        <h3 class="exp-role">Frontend Developer Intern</h3>
+        <div class="exp-company">Taniya Webfix Pvt Ltd — Vadodara</div>
+        <p class="exp-desc">
+          Worked on frontend development tasks including HTML and CSS UI development. Assisted with
+          WordPress customization, built responsive web interfaces, and integrated frontend designs
+          into WordPress themes. Collaborated with the team on real client projects.
+        </p>
+        <div class="exp-tags">
+          <span class="ptag">HTML</span>
+          <span class="ptag">CSS</span>
+          <span class="ptag">WordPress</span>
+          <span class="ptag">UI Development</span>
+          <span class="ptag">Responsive Design</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     EDUCATION
+════════════════════════════════════════ -->
+<section id="education">
+  <div class="wrap">
+    <div class="sr sec-center">
+      <div class="sec-overline"><span>Education</span></div>
+      <h2 class="sec-title">Academic <em>Background</em></h2>
+      <div class="sec-rule"></div>
+    </div>
+
+    <div class="edu-grid">
+
+      <div class="edu-card sr">
+        <div class="edu-icon-wrap"><i class="fas fa-graduation-cap"></i></div>
+        <div class="edu-degree">Diploma in Information Technology</div>
+        <div class="edu-school">ITM (SLS) Baroda University</div>
+        <div class="edu-year"><i class="far fa-calendar-alt"></i> 2022 – 2025</div>
+        <span class="edu-badge b-done"><i class="fas fa-check-circle"></i> Completed</span>
+      </div>
+
+      <div class="edu-card sr d2">
+        <div class="edu-icon-wrap"><i class="fas fa-university"></i></div>
+        <div class="edu-degree">Bachelor of Computer Applications (BCA)</div>
+        <div class="edu-school">Parul University (Online)</div>
+        <div class="edu-year"><i class="far fa-calendar-alt"></i> Pursuing</div>
+        <span class="edu-badge b-wip"><i class="fas fa-circle-notch fa-spin"></i> In Progress</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     GITHUB
+════════════════════════════════════════ -->
+<section id="github">
+  <div class="wrap">
+    <div class="sr">
+      <div class="sec-overline"><span>Open Source</span></div>
+      <h2 class="sec-title">My <em>GitHub</em></h2>
+      <div class="sec-rule"></div>
+    </div>
+
+    <div class="gh-grid">
+
+      <div class="gh-left sr">
+        <p>
+          View my development projects and WordPress builds on GitHub. I consistently push code as
+          I learn and take on new projects — tracking my growth one commit at a time.
+        </p>
+        <div class="gh-repo-list">
+          <a href="https://github.com/princemistry1227" target="_blank" class="gh-repo">
+            <div class="ghr-left">
+              <i class="fas fa-folder-open"></i>
+              <span class="ghr-name">charity-wordpress-site</span>
+            </div>
+            <span class="ghr-lang">PHP / WordPress</span>
+          </a>
+          <a href="https://github.com/princemistry1227" target="_blank" class="gh-repo">
+            <div class="ghr-left">
+              <i class="fas fa-folder-open"></i>
+              <span class="ghr-name">restaurant-elementor</span>
+            </div>
+            <span class="ghr-lang">WordPress</span>
+          </a>
+          <a href="https://github.com/princemistry1227" target="_blank" class="gh-repo">
+            <div class="ghr-left">
+              <i class="fas fa-folder-open"></i>
+              <span class="ghr-name">html-css-projects</span>
+            </div>
+            <span class="ghr-lang">HTML / CSS</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="gh-card sr d2">
+        <div class="gh-avatar">PM</div>
+        <div class="gh-handle">@prince<span>mistry1227</span></div>
+        <p class="gh-bio">
+          Building and learning one commit at a time. WordPress developer from Vadodara, India.
+          Open to collaborations and freelance projects.
+        </p>
+        <div class="gh-stats">
+          <div class="ghs-stat">
+            <div class="n count-up" data-target="3" data-suffix="+">0+</div>
+            <div class="l">Repos</div>
+          </div>
+          <div class="ghs-stat">
+            <div class="n count-up" data-target="100" data-suffix="+">0+</div>
+            <div class="l">Commits</div>
+          </div>
+        </div>
+        <a href="https://github.com/princemistry1227" target="_blank" class="btn btn-primary" style="width:100%;justify-content:center">
+          <i class="fab fa-github"></i> View GitHub Profile
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="sr sec-center">
+      <div class="sec-overline"><span>Contact</span></div>
+      <h2 class="sec-title">Let's <em>Connect</em></h2>
+      <div class="sec-rule"></div>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- Info -->
+      <div class="sr">
+        <p class="contact-info-intro">
+          I'm currently open to new opportunities. Whether you have a project in mind, a question,
+          or just want to say hello — my inbox is always open!
+        </p>
+        <div class="cinfo-stack">
+          <div class="ci-row">
+            <div class="ci-icon"><i class="fas fa-phone"></i></div>
+            <div class="ci-text">
+              <div class="lb">Phone</div>
+              <div class="vl">+91 6354014463</div>
+            </div>
+          </div>
+          <div class="ci-row">
+            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+            <div class="ci-text">
+              <div class="lb">Email</div>
+              <a href="mailto:princemistry1227@gmail.com">princemistry1227@gmail.com</a>
+            </div>
+          </div>
+          <div class="ci-row">
+            <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="ci-text">
+              <div class="lb">Location</div>
+              <div class="vl">Vadodara, Gujarat, India</div>
+            </div>
+          </div>
+          <div class="ci-row">
+            <div class="ci-icon"><i class="fab fa-github"></i></div>
+            <div class="ci-text">
+              <div class="lb">GitHub</div>
+              <a href="https://github.com/princemistry1227" target="_blank">
+                github.com/princemistry1227
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="sr d2">
+        <div class="cform-card">
+
+          <div id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label>First Name</label>
+                <input id="fname" type="text" placeholder="Prince"/>
+              </div>
+              <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" placeholder="Mistry"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input id="femail" type="email" placeholder="your@email.com"/>
+            </div>
+            <div class="form-group">
+              <label>Subject</label>
+              <input type="text" placeholder="Project Inquiry / Freelance / General"/>
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea id="fmessage" rows="5" placeholder="Tell me about your project or idea..."></textarea>
+            </div>
+            <button class="form-submit" id="submitBtn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </div>
+
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i>
+            <strong>Message Sent Successfully!</strong>
+            <p>Thanks for reaching out, Prince will reply shortly.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <div class="footer-logo-dot"></div>
+      Prince Mistry
+    </div>
+    <div class="footer-copy">© Prince Mistry | WordPress Developer</div>
+    <div class="footer-socials">
+      <a href="https://github.com/princemistry1227" target="_blank" class="fsoc" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:princemistry1227@gmail.com" class="fsoc" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="tel:+916354014463" class="fsoc" title="Phone">
+        <i class="fas fa-phone"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- Script -->
+<script src="script.js"></script>
+</body>
+</html>
