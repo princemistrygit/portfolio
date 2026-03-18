@@ -263,29 +263,29 @@ function showFormAlert(msg) {
 /* ══════════════════════════════════════════
    TYPING EFFECT
 ══════════════════════════════════════════ */
-function initTyping() {
-  const el = document.getElementById('typingText');
-  if (!el) return;
+// function initTyping() {
+//   const el = document.getElementById('typingText');
+//   if (!el) return;
 
-  const words = ['WordPress Developer', 'Frontend Developer', 'Elementor Expert', 'PHP Developer'];
-  let wIdx = 0, cIdx = 0, deleting = false, pause = false;
+//   const words = ['WordPress Developer', 'Frontend Developer', 'Elementor Expert', 'PHP Developer'];
+//   let wIdx = 0, cIdx = 0, deleting = false, pause = false;
 
-  function type() {
-    if (pause) { setTimeout(type, 1400); pause = false; return; }
+//   function type() {
+//     if (pause) { setTimeout(type, 1400); pause = false; return; }
 
-    const word = words[wIdx];
-    if (!deleting) {
-      el.textContent = word.slice(0, ++cIdx);
-      if (cIdx === word.length) { pause = true; deleting = true; }
-      setTimeout(type, 80);
-    } else {
-      el.textContent = word.slice(0, --cIdx);
-      if (cIdx === 0) { deleting = false; wIdx = (wIdx + 1) % words.length; }
-      setTimeout(type, 45);
-    }
-  }
-  type();
-}
+//     const word = words[wIdx];
+//     if (!deleting) {
+//       el.textContent = word.slice(0, ++cIdx);
+//       if (cIdx === word.length) { pause = true; deleting = true; }
+//       setTimeout(type, 80);
+//     } else {
+//       el.textContent = word.slice(0, --cIdx);
+//       if (cIdx === 0) { deleting = false; wIdx = (wIdx + 1) % words.length; }
+//       setTimeout(type, 45);
+//     }
+//   }
+//   type();
+// }
 
 /* ══════════════════════════════════════════
    COUNTER ANIMATION
